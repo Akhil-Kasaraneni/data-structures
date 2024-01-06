@@ -1,0 +1,7 @@
+{
+  "editor.formatOnSave": true,
+  "eslint.format.enable": true,
+  "prettier.documentSelectors": [".js"],
+  "editor.formatOnPaste": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
