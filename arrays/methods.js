@@ -1,5 +1,5 @@
 // reference : https://www.geeksforgeeks.org/javascript-array-reference/
-// https://www.geeksforgeeks.org/javascript-basic-array-methods/?ref=lbp
+// https://www.geeksforgeeks.org/javascript-basic-array-methods/?ref=lbp   --> All methods
 
 
 // Common methods of arrays in js
