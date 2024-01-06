@@ -24,12 +24,28 @@
 // [ 'amit', 45, 521, 43434, 'prateek' ]
 
 
+
+
+
 // ************** Modifies the orginal array **************** 
 
 // pop will pop off the last element
 // shift method will remove the first element (both the pop and shift methods dont take any further arguments)
 // unshift will add the elements at the start of the array (just like push takes as many arguments as needed)
+// slice(start, end ) both params are optional. just gives a copy. 
+
 
 // lastIndexOf(element, start = 0) ; if none returns -1 
+
+// array.some will give a boolean result. just checks whether something satisfies the condition or not.
+
+const numbers = [1, 2, 3, 4, 5];
+
+// Check if at least one element is greater than 3
+const result = numbers.some(function(element) {
+  return element > 3;
+});
+
+console.log(result); // Outputs: true (because 4 and 5 are greater than 3)
 
 
