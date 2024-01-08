@@ -1,9 +1,12 @@
 function rotate(arr, pos){
     pos = pos % arr.length
-    while(pos > 0){
-        rotateOneByOne(arr)
-        pos --
-    }
+
+    // *** By rotation one by one *****
+    // while(pos > 0){
+    //     rotateOneByOne(arr)
+    //     pos --
+    // }
+    temporaryArraySol(arr,pos)
     return arr
 }
 
@@ -15,6 +18,16 @@ function rotateOneByOne (arr){
         arr[start] = store
         store = num
         start++
+    }
+}
+
+function temporaryArraySol(arr,pos){
+    let tempArray = arr.slice(0,arr.length-pos)
+    for(let i=0;i<pos;i++){
+        arr[i] = arr[arr.length-pos+i]
+    }
+    for(let i=pos;i<arr.length;i++){
+        arr[i] = tempArray[i-pos]
     }
 }
 
