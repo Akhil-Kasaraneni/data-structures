@@ -16,3 +16,7 @@ function linearSearch(arr,search){
     }
     return -1
 }
+
+let a = [1,2,3,4,13,31,,1341,4,141,41,1]
+
+console.log(sentinelSearch(a,1341));
