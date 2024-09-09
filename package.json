@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "nodemon": "^3.1.4"
+  },
+  "scripts": {
+    "watch": "npx nodemon src/repl.js"
   }
 }
