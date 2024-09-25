@@ -22,4 +22,6 @@ const binarySearch = (arr,num)=>{
 }
 
 
-console.log(binarySearch(arr,1)+1)
+// console.log(binarySearch(arr,1)+1)
+
+
