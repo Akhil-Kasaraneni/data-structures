@@ -1,3 +1,5 @@
+
+// can be used when the data is huge and we reduced one check....
 function sentinelSearch(arr,search){
     const last = arr[arr.length -1 ]
     let i = 0
@@ -5,7 +7,6 @@ function sentinelSearch(arr,search){
     if(i < arr.length -1 || last ===search) return i
     return -1
 }
-
 
 // How is it different from linear search
 // For a very large data, we dont have check for 2 conditions. Not a big deal from linear search... 
