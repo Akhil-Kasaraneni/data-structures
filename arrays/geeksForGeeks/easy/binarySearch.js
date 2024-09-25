@@ -6,7 +6,7 @@ function binarySearch(arr,search){
 
     while(start <= end){
         const mid = Math.floor((start + end )/2)
-        console.log("start end mind",start,end,mid)
+        // console.log("start end mind",start,end,mid)
         if(arr[mid] === search) return mid
         else if(arr[mid] > search) end = mid - 1
         else start = mid + 1
@@ -61,7 +61,7 @@ function findMissingNum(arr,n){
 // Given an array of integers arr[], The task is to find the index of first repeating element in it i.e. the element that occurs more than once and whose index of the first occurrence is the smallest. 
  
 // Driver code
-let arr = [ 10, 5, 3, 4, 3, 5, 6 ];
+// let arr = [ 10, 5, 3, 4, 3, 5, 6 ];
 
 // function printFirstRepeating(arr){
 //     let obj = {}
@@ -74,3 +74,30 @@ let arr = [ 10, 5, 3, 4, 3, 5, 6 ];
 // }
 
 // printFirstRepeating(arr);
+
+
+let arr = [1, 8, 90,90,890,1000, 1480];
+
+function binarySearchAlgo(arr,num){
+    if(!arr || !arr.length) return -1
+    let start = 0
+    let end = arr.length - 1
+
+    let firstIndex = -1
+    while(start <= end){
+        const mid = Math.floor((start+end)/2)
+        if(arr[mid] === num){
+            firstIndex = mid
+            end = mid - 1 
+            console.log("end is ",end)
+        }
+        else if(arr[mid] > num) end = mid - 1
+        else start = mid+1
+    }
+    return firstIndex
+}
+
+
+console.log(binarySearchAlgo(arr,90))
+
+// export default binarySearchAlgo
