@@ -31,6 +31,7 @@ const sortByFreq = (arr)=>{
 }
 
 
+// we could have used object instead of this...
 sortByFreq([2, 5, 2, 8, 5, 6, 8, 8])
 sortByFreq([2, 5, 2, 6, -1, 9999999, 5, 8, 8, 8])
 
